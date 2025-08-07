@@ -1,0 +1,115 @@
+definitions:
+  model.APIResponse:
+    properties:
+      data: {}
+      error: {}
+      success:
+        example: true
+        type: boolean
+    type: object
+  model.ErrorResponse:
+    properties:
+      error:
+        example: Invalid request
+        type: string
+      message:
+        example: text_pertanyaan and text_jawaban are required
+        type: string
+    type: object
+  model.SentimentRequest:
+    properties:
+      text_jawaban:
+        example: Layanan Anda sangat memuaskan dan responsif
+        type: string
+      text_pertanyaan:
+        example: Bagaimana pendapat Anda tentang layanan kami?
+        type: string
+    required:
+    - text_jawaban
+    - text_pertanyaan
+    type: object
+  model.SentimentResponse:
+    properties:
+      sentiment:
+        example: Positif
+        type: string
+    type: object
+info:
+  contact: {}
+paths:
+  /api/v1/sentiment/analyze:
+    post:
+      consumes:
+      - application/json
+      description: 'Analyze sentiment of text based on question and answer pair. Returns
+        one of three sentiment types: Positif, Negatif, or Netral'
+      parameters:
+      - description: Sentiment analysis request containing question and answer pair
+        in: body
+        name: request
+        required: true
+        schema:
+          $ref: '#/definitions/model.SentimentRequest'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: Successful sentiment analysis
+          schema:
+            allOf:
+            - $ref: '#/definitions/model.APIResponse'
+            - properties:
+                data:
+                  $ref: '#/definitions/model.SentimentResponse'
+              type: object
+        "400":
+          description: Bad request - invalid JSON or missing required fields
+          schema:
+            allOf:
+            - $ref: '#/definitions/model.APIResponse'
+            - properties:
+                error:
+                  $ref: '#/definitions/model.ErrorResponse'
+              type: object
+        "500":
+          description: Internal server error - LLM API failure or processing error
+          schema:
+            allOf:
+            - $ref: '#/definitions/model.APIResponse'
+            - properties:
+                error:
+                  $ref: '#/definitions/model.ErrorResponse'
+              type: object
+      summary: Analyze sentiment of text
+      tags:
+      - sentiment
+  /api/v1/sentiment/types:
+    get:
+      description: Get list of all supported sentiment values that can be returned
+        by the analysis endpoint
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: List of supported sentiment types
+          schema:
+            additionalProperties: true
+            type: object
+      summary: Get supported sentiment types
+      tags:
+      - sentiment
+  /health:
+    get:
+      description: Check if the Sentiment Analysis API is running and healthy
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: API is healthy and running
+          schema:
+            additionalProperties: true
+            type: object
+      summary: Health check endpoint
+      tags:
+      - health
+swagger: "2.0"

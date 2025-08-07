@@ -1,0 +1,534 @@
+{
+  "test_config": {
+    "total_requests": 30,
+    "base_url": "http://localhost:8081",
+    "test_time": "2025-08-07 12:32:55",
+    "mode": "non-reasoning"
+  },
+  "test_data": [
+    {
+      "id": 1,
+      "text": "Produk ini sangat bagus dan berkualitas tinggi"
+    },
+    {
+      "id": 2,
+      "text": "Pelayanan customer service sangat mengecewakan"
+    },
+    {
+      "id": 3,
+      "text": "Harga produk sesuai dengan kualitas yang diberikan"
+    },
+    {
+      "id": 4,
+      "text": "Saya sangat puas dengan pembelian ini, terima kasih"
+    },
+    {
+      "id": 5,
+      "text": "Barang rusak dan tidak sesuai dengan deskripsi"
+    },
+    {
+      "id": 6,
+      "text": "Pengiriman cepat dan packaging rapi"
+    },
+    {
+      "id": 7,
+      "text": "Aplikasi sering error dan lambat"
+    },
+    {
+      "id": 8,
+      "text": "Interface mudah digunakan dan intuitif"
+    },
+    {
+      "id": 9,
+      "text": "Makanan enak banget, worth it!"
+    },
+    {
+      "id": 10,
+      "text": "Tempat kotor dan pelayanan buruk"
+    },
+    {
+      "id": 11,
+      "text": "Film bagus, ceritanya menarik"
+    },
+    {
+      "id": 12,
+      "text": "Aktingnya jelek dan membosankan"
+    },
+    {
+      "id": 13,
+      "text": "Musik nya enak didengar"
+    },
+    {
+      "id": 14,
+      "text": "Suaranya fals dan tidak enak"
+    },
+    {
+      "id": 15,
+      "text": "Buku ini sangat menginspirasi"
+    },
+    {
+      "id": 16,
+      "text": "Isinya membingungkan dan tidak jelas"
+    },
+    {
+      "id": 17,
+      "text": "Kualitas gambar HD dan jernih"
+    },
+    {
+      "id": 18,
+      "text": "Video blur dan audio pecah"
+    },
+    {
+      "id": 19,
+      "text": "Proses pendaftaran mudah dan cepat"
+    },
+    {
+      "id": 20,
+      "text": "Website lemot dan sering down"
+    },
+    {
+      "id": 21,
+      "text": "Tolol babi bangsat dongo sialan"
+    },
+    {
+      "id": 22,
+      "text": "Luar biasa sekali hasilnya"
+    },
+    {
+      "id": 23,
+      "text": "Biasa aja sih tidak istimewa"
+    },
+    {
+      "id": 24,
+      "text": "Mantap jiwa recommended banget"
+    },
+    {
+      "id": 25,
+      "text": "Sampah total buang-buang uang"
+    },
+    {
+      "id": 26,
+      "text": "Oke lah untuk harga segitu"
+    },
+    {
+      "id": 27,
+      "text": "Keren abis gak nyesel beli"
+    },
+    {
+      "id": 28,
+      "text": "Zonk parah mending beli yang lain"
+    },
+    {
+      "id": 29,
+      "text": "So-so gak ada yang spesial"
+    },
+    {
+      "id": 30,
+      "text": "Perfect banget sesuai ekspektasi"
+    }
+  ],
+  "results": [
+    {
+      "text": "Produk ini sangat bagus dan berkualitas tinggi",
+      "success": true,
+      "response_time": 672290300,
+      "sentiment": "Positif",
+      "error": null,
+      "full_response": {
+        "success": true,
+        "data": {
+          "sentiment": "Positif"
+        }
+      }
+    },
+    {
+      "text": "Pelayanan customer service sangat mengecewakan",
+      "success": true,
+      "response_time": 560781800,
+      "sentiment": "Negatif",
+      "error": null,
+      "full_response": {
+        "success": true,
+        "data": {
+          "sentiment": "Negatif"
+        }
+      }
+    },
+    {
+      "text": "Harga produk sesuai dengan kualitas yang diberikan",
+      "success": true,
+      "response_time": 528407400,
+      "sentiment": "Netral",
+      "error": null,
+      "full_response": {
+        "success": true,
+        "data": {
+          "sentiment": "Netral"
+        }
+      }
+    },
+    {
+      "text": "Saya sangat puas dengan pembelian ini, terima kasih",
+      "success": true,
+      "response_time": 409946300,
+      "sentiment": "Positif",
+      "error": null,
+      "full_response": {
+        "success": true,
+        "data": {
+          "sentiment": "Positif"
+        }
+      }
+    },
+    {
+      "text": "Barang rusak dan tidak sesuai dengan deskripsi",
+      "success": true,
+      "response_time": 342682300,
+      "sentiment": "Negatif",
+      "error": null,
+      "full_response": {
+        "success": true,
+        "data": {
+          "sentiment": "Negatif"
+        }
+      }
+    },
+    {
+      "text": "Pengiriman cepat dan packaging rapi",
+      "success": true,
+      "response_time": 401548100,
+      "sentiment": "Positif",
+      "error": null,
+      "full_response": {
+        "success": true,
+        "data": {
+          "sentiment": "Positif"
+        }
+      }
+    },
+    {
+      "text": "Aplikasi sering error dan lambat",
+      "success": true,
+      "response_time": 321117800,
+      "sentiment": "Negatif",
+      "error": null,
+      "full_response": {
+        "success": true,
+        "data": {
+          "sentiment": "Negatif"
+        }
+      }
+    },
+    {
+      "text": "Interface mudah digunakan dan intuitif",
+      "success": true,
+      "response_time": 453846000,
+      "sentiment": "Positif",
+      "error": null,
+      "full_response": {
+        "success": true,
+        "data": {
+          "sentiment": "Positif"
+        }
+      }
+    },
+    {
+      "text": "Makanan enak banget, worth it!",
+      "success": true,
+      "response_time": 350214600,
+      "sentiment": "Positif",
+      "error": null,
+      "full_response": {
+        "success": true,
+        "data": {
+          "sentiment": "Positif"
+        }
+      }
+    },
+    {
+      "text": "Tempat kotor dan pelayanan buruk",
+      "success": true,
+      "response_time": 450104600,
+      "sentiment": "Negatif",
+      "error": null,
+      "full_response": {
+        "success": true,
+        "data": {
+          "sentiment": "Negatif"
+        }
+      }
+    },
+    {
+      "text": "Film bagus, ceritanya menarik",
+      "success": true,
+      "response_time": 421078300,
+      "sentiment": "Positif",
+      "error": null,
+      "full_response": {
+        "success": true,
+        "data": {
+          "sentiment": "Positif"
+        }
+      }
+    },
+    {
+      "text": "Aktingnya jelek dan membosankan",
+      "success": true,
+      "response_time": 340027200,
+      "sentiment": "Negatif",
+      "error": null,
+      "full_response": {
+        "success": true,
+        "data": {
+          "sentiment": "Negatif"
+        }
+      }
+    },
+    {
+      "text": "Musik nya enak didengar",
+      "success": true,
+      "response_time": 338902600,
+      "sentiment": "Positif",
+      "error": null,
+      "full_response": {
+        "success": true,
+        "data": {
+          "sentiment": "Positif"
+        }
+      }
+    },
+    {
+      "text": "Suaranya fals dan tidak enak",
+      "success": true,
+      "response_time": 329644000,
+      "sentiment": "Negatif",
+      "error": null,
+      "full_response": {
+        "success": true,
+        "data": {
+          "sentiment": "Negatif"
+        }
+      }
+    },
+    {
+      "text": "Buku ini sangat menginspirasi",
+      "success": true,
+      "response_time": 360497900,
+      "sentiment": "Positif",
+      "error": null,
+      "full_response": {
+        "success": true,
+        "data": {
+          "sentiment": "Positif"
+        }
+      }
+    },
+    {
+      "text": "Isinya membingungkan dan tidak jelas",
+      "success": true,
+      "response_time": 419094500,
+      "sentiment": "Negatif",
+      "error": null,
+      "full_response": {
+        "success": true,
+        "data": {
+          "sentiment": "Negatif"
+        }
+      }
+    },
+    {
+      "text": "Kualitas gambar HD dan jernih",
+      "success": true,
+      "response_time": 409422600,
+      "sentiment": "Positif",
+      "error": null,
+      "full_response": {
+        "success": true,
+        "data": {
+          "sentiment": "Positif"
+        }
+      }
+    },
+    {
+      "text": "Video blur dan audio pecah",
+      "success": true,
+      "response_time": 371901400,
+      "sentiment": "Negatif",
+      "error": null,
+      "full_response": {
+        "success": true,
+        "data": {
+          "sentiment": "Negatif"
+        }
+      }
+    },
+    {
+      "text": "Proses pendaftaran mudah dan cepat",
+      "success": true,
+      "response_time": 458673300,
+      "sentiment": "Positif",
+      "error": null,
+      "full_response": {
+        "success": true,
+        "data": {
+          "sentiment": "Positif"
+        }
+      }
+    },
+    {
+      "text": "Website lemot dan sering down",
+      "success": true,
+      "response_time": 478740200,
+      "sentiment": "Negatif",
+      "error": null,
+      "full_response": {
+        "success": true,
+        "data": {
+          "sentiment": "Negatif"
+        }
+      }
+    },
+    {
+      "text": "Tolol babi bangsat dongo sialan",
+      "success": true,
+      "response_time": 415103200,
+      "sentiment": "Negatif",
+      "error": null,
+      "full_response": {
+        "success": true,
+        "data": {
+          "sentiment": "Negatif"
+        }
+      }
+    },
+    {
+      "text": "Luar biasa sekali hasilnya",
+      "success": true,
+      "response_time": 521416700,
+      "sentiment": "Positif",
+      "error": null,
+      "full_response": {
+        "success": true,
+        "data": {
+          "sentiment": "Positif"
+        }
+      }
+    },
+    {
+      "text": "Biasa aja sih tidak istimewa",
+      "success": true,
+      "response_time": 484504500,
+      "sentiment": "Netral",
+      "error": null,
+      "full_response": {
+        "success": true,
+        "data": {
+          "sentiment": "Netral"
+        }
+      }
+    },
+    {
+      "text": "Mantap jiwa recommended banget",
+      "success": true,
+      "response_time": 378043000,
+      "sentiment": "Positif",
+      "error": null,
+      "full_response": {
+        "success": true,
+        "data": {
+          "sentiment": "Positif"
+        }
+      }
+    },
+    {
+      "text": "Sampah total buang-buang uang",
+      "success": true,
+      "response_time": 340297400,
+      "sentiment": "Negatif",
+      "error": null,
+      "full_response": {
+        "success": true,
+        "data": {
+          "sentiment": "Negatif"
+        }
+      }
+    },
+    {
+      "text": "Oke lah untuk harga segitu",
+      "success": true,
+      "response_time": 333752400,
+      "sentiment": "Netral",
+      "error": null,
+      "full_response": {
+        "success": true,
+        "data": {
+          "sentiment": "Netral"
+        }
+      }
+    },
+    {
+      "text": "Keren abis gak nyesel beli",
+      "success": true,
+      "response_time": 326244200,
+      "sentiment": "Positif",
+      "error": null,
+      "full_response": {
+        "success": true,
+        "data": {
+          "sentiment": "Positif"
+        }
+      }
+    },
+    {
+      "text": "Zonk parah mending beli yang lain",
+      "success": true,
+      "response_time": 700012100,
+      "sentiment": "Negatif",
+      "error": null,
+      "full_response": {
+        "success": true,
+        "data": {
+          "sentiment": "Negatif"
+        }
+      }
+    },
+    {
+      "text": "So-so gak ada yang spesial",
+      "success": true,
+      "response_time": 340541700,
+      "sentiment": "Netral",
+      "error": null,
+      "full_response": {
+        "success": true,
+        "data": {
+          "sentiment": "Netral"
+        }
+      }
+    },
+    {
+      "text": "Perfect banget sesuai ekspektasi",
+      "success": true,
+      "response_time": 329843200,
+      "sentiment": "Positif",
+      "error": null,
+      "full_response": {
+        "success": true,
+        "data": {
+          "sentiment": "Positif"
+        }
+      }
+    }
+  ],
+  "metrics": {
+    "total_requests": 30,
+    "successful_requests": 30,
+    "failed_requests": 0,
+    "success_rate": 100,
+    "total_time": 12653355500,
+    "avg_response_time": 419622653,
+    "min_response_time": 321117800,
+    "max_response_time": 700012100,
+    "median_response_time": 405485350,
+    "requests_per_second": 2.3709126010092736
+  }
+}
